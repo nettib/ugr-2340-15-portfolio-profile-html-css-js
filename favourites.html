@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="favourites.css" />
+    <title>Favourites</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="Home.html">
+          <img src="Images/N.png" alt="Netsanet Tibebu Logo" class="logo-img" />
+        </a>
+        <ul class="menuList">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="aboutme.html">About me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="favourites.html">Favourites</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <mark class="menuBtn">
+          <img
+            src="Images/menubtn.svg"
+            alt=""
+            class="menuBtnImg"
+            tabindex="0"
+            onclick="toggleMenu()"
+          />
+        </mark>
+      </nav>
+    </header>
+
+    <main>
+      <section class="favourites">
+        <h1 class="favouritesHeading">Favourites</h1>
+
+        <div class="wow">
+          <article class="movies">
+            <h2 class="moviesHeading">Movies</h2>
+            <div class="swiperContainer">
+              <div class="BtnContainer prevBtn">
+                <img
+                  src="Images/angle-left.svg"
+                  alt="Previous"
+                  tabindex="0"
+                  onclick="prevSlide()"
+                  class="btn btn2"
+                />
+              </div>
+              <div class="swiperWrapper">
+                <figure class="swiperSlide">
+                  <video class="movie movie1" controls autoplay muted>
+                    <source src="videos/ALGORITHM.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <figcaption>Algorithm</figcaption>
+                </figure>
+                <figure class="swiperSlide">
+                  <video class="movie movie2" controls autoplay muted>
+                    <source
+                      src="videos/JUMANJI-THE-NEXT-LEVEL.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                  <figcaption>Jumanji: The Next Level</figcaption>
+                </figure>
+                <figure class="swiperSlide">
+                  <video class="movie movie3" controls autoplay muted>
+                    <source src="videos/SPIDER-MAN.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <figcaption>Spider-Man</figcaption>
+                </figure>
+              </div>
+              <div class="BtnContainer nextBtn">
+                <img
+                  src="Images/angle-right.svg"
+                  alt="Next"
+                  tabindex="0"
+                  onclick="nextSlide()"
+                  class="btn btn1"
+                />
+              </div>
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+          </article>
+          <article class="photos">
+            <hgroup class="photosHeading">
+              <h2>Nature Photos</h2>
+              <p>Exploring Nature</p>
+            </hgroup>
+            <div class="photoContainer">
+              <div class="BtnContainer2 prevBtn">
+                <img
+                  src="Images/angle-left.svg"
+                  alt="Previous"
+                  tabindex="0"
+                  onclick="prevSlide2()"
+                  class="btn btn1"
+                />
+              </div>
+              <div class="photoWrapper">
+                <figure class="imgSlider">
+                  <img
+                    src="Images/Nature1.jpg"
+                    alt="Nature Scene 1"
+                    class="natureImg"
+                  />
+                </figure>
+                <figure class="imgSlider">
+                  <img
+                    src="Images/Nature2.jpg"
+                    alt="Nature Scene 2"
+                    class="natureImg"
+                  />
+                </figure>
+                <figure class="imgSlider">
+                  <img
+                    src="Images/Nature3.jpg"
+                    alt="Nature Scene 3"
+                    class="natureImg"
+                  />
+                </figure>
+              </div>
+              <div class="BtnContainer2 nextBtn">
+                <img
+                  src="Images/angle-right.svg"
+                  alt="Next"
+                  tabindex="0"
+                  onclick="nextSlide2()"
+                  class="btn btn2"
+                />
+              </div>
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+          </article>
+        </div>
+        <article class="quotes">
+          <hgroup class="quotesHeading">
+            <h2>Quotes</h2>
+            <p>Words to inspire</p>
+          </hgroup>
+
+          <div class="quotescontainer">
+            <div class="BtnContainer3 prevBtn">
+              <img
+                src="Images/angle-left.svg"
+                alt="Previous"
+                tabindex="0"
+                onclick="prevSlide3()"
+                class="btn btn1"
+              />
+            </div>
+            <div class="quotesWrapper">
+              <blockquote class="quotesSlider">
+                <p>Suffer now and live the rest of your life as a champion</p>
+                <mark class="legendName">Mohammed Ali</mark>
+              </blockquote>
+
+              <blockquote class="quotesSlider">
+                <p>
+                  Live as if you were to die tomorrow. Learn as if you were to
+                  live forever
+                </p>
+                <mark class="legendName">Mahatma Gandhi</mark>
+              </blockquote>
+
+              <blockquote class="quotesSlider">
+                <p>The only impossible journey is the one you never begin</p>
+                <mark class="legendName">Tony Robbins</mark>
+              </blockquote>
+            </div>
+
+            <div class="BtnContainer3 nextBtn">
+              <img
+                src="Images/angle-right.svg"
+                alt="Next"
+                tabindex="0"
+                onclick="nextSlide3()"
+                class="btn btn2"
+              />
+            </div>
+
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p class="footerText">&copy; Netsanet Tibebu</p>
+      <div class="mediaLinks">
+        <a href="https://github.com/nettib">
+          <img src="Images/github.svg" alt="github" class="footerimg" />
+        </a>
+        <a href="https://www.linkedin.com/in/netsanet-tibebu-10127a292/">
+          <img src="Images/linkedin.svg" alt="linkedin" class="footerimg" />
+        </a>
+        <a href="https://web.facebook.com/profile.php?id=100081572238540">
+          <img src="Images/facebook.svg" alt="facebook" class="footerimg" />
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="Home.html">
+          <img src="Images/N.png" alt="Netsanet Tibebu Logo" class="logo-img" />
+        </a>
+        <ul class="menuList">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="aboutme.html">About me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="favourites.html">Favourites</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <mark class="menuBtn">
+          <img
+            src="Images/menubtn.svg"
+            alt=""
+            class="menuBtnImg"
+            tabindex="0"
+            onclick="toggleMenu()"
+          />
+        </mark>
+      </nav>
+    </header>
+
+    <main>
+      <header><h1 class="contactHeading">Contact</h1></header>
+
+      <div class="contactWrapper">
+        <div class="contact_me">
+          <div class="contact_information">
+            <img src="Images/phone.svg" alt="" class="contactLogo" />
+            <div>
+              <h2 class="contactTitle">Call Me</h2>
+              <mark class="contactDetail">+251-922-41-23-21</mark>
+            </div>
+          </div>
+          <div class="contact_information">
+            <img src="Images/envelope.svg" alt="" class="contactLogo" />
+            <div>
+              <h2 class="contactTitle">Email</h2>
+              <mark class="contactDetail">netsanettibebu098@gmail.com</mark>
+            </div>
+          </div>
+          <div class="contact_information">
+            <img src="Images/telegram.svg" alt="" class="contactLogo" />
+            <div>
+              <h2 class="contactTitle">Telegram</h2>
+              <mark class="contactDetail">@Net_Tib</mark>
+            </div>
+          </div>
+        </div>
+        <form class="formPlace">
+          <div class="form_components">
+            <label for="name" class="formTitle">Name</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Name"
+              class="formText namePlace"
+            />
+          </div>
+          <div class="form_components">
+            <label for="email" class="formTitle">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Email"
+              class="formText emailPlace"
+            />
+          </div>
+          <div class="form_components">
+            <label for="message" class="formTitle">Message</label>
+            <textarea
+              id="message"
+              placeholder="Message"
+              class="formText textplace"
+            ></textarea>
+          </div>
+          <div class="Btn">
+            <button type="submit" class="submitBtn">Send</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p class="footerText">&copy; Netsanet Tibebu</p>
+      <div class="mediaLinks">
+        <a href="https://github.com/nettib">
+          <img src="Images/github.svg" alt="github" class="footerimg" />
+        </a>
+        <a href="https://www.linkedin.com/in/netsanet-tibebu-10127a292/">
+          <img src="Images/linkedin.svg" alt="linkedin" class="footerimg" />
+        </a>
+        <a href="https://web.facebook.com/profile.php?id=100081572238540">
+          <img src="Images/facebook.svg" alt="facebook" class="footerimg" />
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
