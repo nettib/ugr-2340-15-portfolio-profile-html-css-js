@@ -25,6 +25,21 @@ h2 {
     font-size: 36px;
 }
 
+button {
+    padding: 0.6rem 0.8rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #76b8ff;
+}
+a {
+    text-decoration: none;
+}
+
 header {
     background-color: #fff;
     height: 70px;
